@@ -8,7 +8,7 @@ FactoryNet is a project from the Digital Manufacturing Research Team at the Air 
 
 ## Files
 
-All images and labels are stored in the folder `data`. Each image has been given a unique name using a millisecond unix timestamp. The labels for an image are stored in a csv file with the same unix timestamp. For example, `1711609735362.csv` stores the labels for `1711609735362.jpg`.
+All images and labels are stored in the folder `data`. Each image has been given a unique name using a millisecond unix timestamp. The labels for an image are stored in a csv file with the same unix timestamp. For example, [`1711609735362.csv`](data/1711609735362.csv) stores the labels for [`1711609735362.jpg`](data/1711609735362.jpg).
 
 ## Labels
 
@@ -16,7 +16,7 @@ Labels can be associated with different locations of their image through boundin
 
 label, X location, Y location, height, width
 
-### `1711609735362.csv` Example
+### [`1711609735362.csv`](data/1711609735362.csv) Example
 
 circular saw,177,309,286,397
 
