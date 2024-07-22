@@ -4,6 +4,8 @@ FactoryNet is a project from the Digital Manufacturing Research Team at the Air 
 
 # Problem Statement
 
+The most successful machine vision AI systems require large amounts of accurately labeled images for training. The AFRL FactoryNet dataset aims to build the highest quality image dataset for the manufacturing domain. By sourcing images from web scraping, photographing machine shops and factories, and receiving contributions from manufacturing partners FactoryNet has a large volume of images with wide ranging subject matter. Building this into the most useful dataset possible comes with many challenges in defining the scope, organization, and curation strategies. One such challenge, and the current development stage of the dataset, is collecting and organizing the human labels for the images. Where does the most value lie in a dataset of images with multiple unstructured labels? One way to assess the emerging value and gain insight into the patterns and trends that will guide dataset development/expansion as well as ontology design is to test the images ability to inform a classifier. In the case of a dataset with an open ended amount of labels, the classes can be defined in many ways and finding classes that stand out as well defined and successfully labeled will reveal strengths and weaknesses in the dataset. *The challenge presented is to organize/consolidate freeform labels and create classifiers that show the image recognition capabilities enabled by this dataset.* Participants should aim to sanitize and propose structure to the image label data in an intuitive way that can enable image classification. Post-organization the participants should aim to show that classes yielded are useful and accurate by demonstrating they provide enough information to train and validate a classification model. The topic areas of this problem are data sanitization, dataset design, and creation/use of AI/ML models.
+
 # Data Description
 
 ## Files
@@ -12,9 +14,9 @@ All images and labels are stored in the folder `data`. Each image has been given
 
 ## Labels
 
-Labels can be associated with different locations of their image through bounding boxes. These boxes are defined by an X coordinate, Y coordinate, height, and width. The origin of the image is in the top left. Height defines the length of the bounding box in the Y while width defines the length of the bounding box in the X. Headers are not included in the CSV files. This format is defined below with an example following.
+Labels can be associated with different locations of their image through bounding boxes. These boxes are defined by an X coordinate, Y coordinate, height, and width. The X and Y locations define the top left location of the bounding box. The origin of the image is in the top left. Height defines the length of the bounding box in the Y while width defines the length of the bounding box in the X. Headers are not included in the CSV files. This format is defined below with an example following.
 
-label, X location, Y location, height, width
+label, X coordinate, Y coordinate, height, width
 
 ### [`1711609735362.csv`](data/1711609735362.csv) Example
 
