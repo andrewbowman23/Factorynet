@@ -8,7 +8,7 @@ The most successful machine vision AI systems require large amounts of accuratel
 
 A full copy of the challenge problem is included in this repo [`here`](ChallengeProblem.pdf).
 
-The data here is only a sample of the dataset. **The full dataset will be stored on Zenodo in a .tar file. It will be made available once the Hackathon begins.**
+You can find the full dataset on [Zenodo](https://zenodo.org/records/13332887).
 
 Further details on the data we provide and your submission format can be found below.
 
@@ -16,17 +16,17 @@ Further details on the data we provide and your submission format can be found b
 
 ## Files
 
-All images and labels are stored in the folder `data`. Each image has been given a unique name using a millisecond unix timestamp. The labels for an image are stored in a csv file with the same unix timestamp. For example, [`1711609735362.csv`](data/1711609735362.csv) stores the labels for [`1711609735362.jpg`](data/1711609735362.jpg).
+All images and labels are stored in the folder `data` found in `factorynet.tar` on [Zenodo](https://zenodo.org/records/13332887). Each image has been given a unique name using a millisecond unix timestamp. The labels for an image are stored in a csv file with the same unix timestamp. For example, `1711609735362.csv` stores the labels for `1711609735362.jpg`.
 
 ## Labels
 
-Labels can be associated with different locations of their image through bounding boxes. These boxes are defined by an X coordinate (horizontal location), Y coordinate (vertical location), height (bounding box length in Y), width (bounding box length in X), and source (how the label was generated). The X and Y locations define the top left location of the bounding box. The origin of the image is in the top left. The two source possibilities are user or wikimedia (the scraped images category on Wikimedia commons). Wikimedia labels are **not included at this time**. Headers are **not included in the CSV files**. This format is defined below with an example following.
+Labels can be associated with different locations of their image through bounding boxes. These boxes are defined by an X coordinate (horizontal location), Y coordinate (vertical location), height (bounding box length in Y), width (bounding box length in X), and source (how the label was generated). The X and Y locations define the top left location of the bounding box. The origin of the image is in the top left. The two source possibilities are user or wikimedia (the scraped images category on Wikimedia commons). Headers are **not included in the CSV files**. This format is defined below with an example following.
 
 ```
 label, X coordinate, Y coordinate, height, width, source
 ```
 
-### [`1711609735362.csv`](data/1711609735362.csv) Example
+### `1711609735362.csv` Example
 
 ```
 circular saw,177,309,286,397,user
